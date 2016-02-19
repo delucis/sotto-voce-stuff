@@ -1,19 +1,19 @@
-# Troglodyte Angels
+# Sotto Voce Stuff
 
-Web Audio synthesis for [Clara Iannotta](http://claraiannotta.com/)’s *Troglodyte Angels Clank By*.
+Web Audio synthesis for [Clara Iannotta](http://claraiannotta.com/)’s *Sotto Voce Stuff*.
 
-The current performance version can be found at <http://claraiannotta.com/tacb/>
+The current performance version can be found at <http://claraiannotta.com/svs/>
 
 ## Installation for Development
 
 Clone the repository:
 ```bash
-git clone git@github.com:delucis/troglodyte-angels.git
+git clone git@github.com:delucis/sotto-voce-stuff.git
 ```
 
 Install dependencies:    
 ```bash
-cd troglodyte-angels
+cd sotto-voce-stuff
 npm install
 ```
 
@@ -24,7 +24,7 @@ npm run serve
 
 ## Building for Deployment
 
-The following will compile the necessary files for deployment to the subfolder `/tacb` (alias for `grunt build`):
+The following will compile the necessary files for deployment to the subfolder `/svs` (alias for `grunt build`):
 ```bash
 npm run build
 ```

@@ -1,11 +1,11 @@
 {
-  "name": "troglodyte-angels",
+  "name": "sotto-voce-stuff",
   "version": "0.1.0",
-  "description": "Web Audio synthesis for Clara Iannotta’s Troglodyte Angels Clank By",
-  "repository": "delucis/troglodyte-angels",
-  "homepage": "https://github.com/delucis/troglodyte-angels",
+  "description": "Web Audio synthesis for Clara Iannotta’s sotto voce stuff",
+  "repository": "sotto-voce-stuff",
+  "homepage": "https://github.com/delucis/sotto-voce-stuff",
   "bugs": {
-    "url": "https://github.com/delucis/troglodyte-angels/issues",
+    "url": "https://github.com/delucis/sotto-voce-stuff/issues",
     "email": "swithinbank@gmail.com"
   },
   "license": "GPL-3.0",

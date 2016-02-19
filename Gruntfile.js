@@ -88,7 +88,7 @@ module.exports = function(grunt) {
               'js/vendor/jquery-1.11.2.min.js',
               'fonts/**'
             ],
-            dest: 'tacb',
+            dest: 'svs',
             expand: true
           }
         ]
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
           {
             cwd: '',
             src: [ 'cue-data.json' ],
-            dest: 'tacb',
+            dest: 'svs',
             expand: true
           }
         ]
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: ['js/builds/app.js'],
-            dest: 'tacb/js/',
+            dest: 'svs/js/',
             filter: 'isFile'
           }
         ]
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: ['css/builds/app.min.css'],
-            dest: 'tacb/css/',
+            dest: 'svs/css/',
             filter: 'isFile'
           }
         ]
@@ -131,7 +131,7 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: ['icons/*'],
-            dest: 'tacb/',
+            dest: 'svs/',
             filter: 'isFile'
           }
         ]
@@ -140,7 +140,7 @@ module.exports = function(grunt) {
     manifest: {
       generate: {
         options: {
-          basePath: 'tacb/',
+          basePath: 'svs/',
           cache: [],
           fallback: ['/ index.html'],
           exclude: [],
@@ -157,19 +157,19 @@ module.exports = function(grunt) {
           'js/vendor/*.js',
           'fonts/*.woff'
         ],
-        dest: 'tacb/index.appcache'
+        dest: 'svs/index.appcache'
       }
     },
     clean: {
       build: {
-        src: [ 'tacb' ]
+        src: [ 'svs' ]
       },
     },
     connect: {
       server: {
         options: {
           port: 4000,
-          base: 'tacb',
+          base: 'svs',
           hostname: '*',
           open: true
         }
@@ -202,7 +202,7 @@ module.exports = function(grunt) {
   );
   grunt.registerTask(
     'build',
-    'Clean & (re)build distribution-ready project in /tacb',
+    'Clean & (re)build distribution-ready project in /svs',
     ['modernizr:dist', 'yaml', 'json-minify', 'uglify', 'cssmin', 'clean', 'copy:general', 'copy:cues', 'copy:js', 'copy:css', 'copy:icons', "manifest"]
   );
 };

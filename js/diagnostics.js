@@ -38,7 +38,7 @@ function featureDiagnostics(testsArray) {
   $( container ).append(
     '<p>
       If you’re having trouble, please
-      <a href="mailto:swithinbank@gmail.com?subject=Troglodyte%20Angel%20Synth">
+      <a href="mailto:swithinbank@gmail.com?subject=Sotto%20Voce%20Synth">
         contact Chris Swithinbank
       </a>
       with details.
