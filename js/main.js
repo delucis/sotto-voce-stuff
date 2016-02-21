@@ -28,8 +28,8 @@ var oscillatorState = 0;
 var oscillatorFreqVal = 0;
 
 // if volume slider previously set, reload that value
-if (localStorage.masterVol) {
-  gainSlider.value = Number(localStorage.masterVol);
+if (localStorage.SVSmasterVol) {
+  gainSlider.value = Number(localStorage.SVSmasterVol);
   adjustGain();
 }
 
@@ -62,9 +62,9 @@ jQuery.getJSON("cue-data.json", function(data) {
     opt.text = instrumentList[i];
     instrumentsMenu.add(opt, null)
   }
-  if (localStorage.instrumentPick) {
-    instrumentsMenu.selectedIndex = Number(localStorage.instrumentPick);
-    loadInstrumentCues(Number(localStorage.instrumentPick));
+  if (localStorage.SVSinstrumentPick) {
+    instrumentsMenu.selectedIndex = Number(localStorage.SVSinstrumentPick);
+    loadInstrumentCues(Number(localStorage.SVSinstrumentPick));
   } else {
     // initialise default cueArray
     loadInstrumentCues(0);
@@ -93,7 +93,7 @@ function loadInstrumentCues(instrumentIndex) {
   } else {
     currentInstrument = instrumentIndex;
   }
-  editLocalStorage("instrumentPick", currentInstrument);
+  editLocalStorage("SVSinstrumentPick", currentInstrument);
   instrumentCues = cueList[currentInstrument];
   cueArray = Object.keys(instrumentCues);
   maxCue = cueArray.length - 1;
@@ -232,7 +232,7 @@ function cueIncDecEnabler() {
 
 function adjustGain() {
   gainSliderVal = gainSlider.value;
-  editLocalStorage("masterVol", gainSliderVal);
+  editLocalStorage("SVSmasterVol", gainSliderVal);
   masterGainNode.gain.cancelScheduledValues(audioContext.currentTime);
   masterGainNodeVal = masterGainNode.gain.value;
   masterGainNode.gain.setValueAtTime(masterGainNodeVal, audioContext.currentTime);
