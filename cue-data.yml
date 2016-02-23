@@ -5,10 +5,10 @@ instruments:
     cues:
       116:
         frequency: [390, 0]
-        amplitude: [0, 50, 0.08, 1500, 0.35, 1500, 0.7, 3000]
+        amplitude: [0, 50, 0.08, 1500, 0.35, 1500, 1., 3000]
       125:
         frequency: [390, 0]
-        amplitude: [0.7, 50, 0.7, 3000, 0, 9000]
+        amplitude: [1., 50, 1., 3000, 0, 9000]
   -  
     name: Alti A
     pan: 10
