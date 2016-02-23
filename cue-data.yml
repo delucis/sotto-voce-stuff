@@ -91,7 +91,7 @@ instruments:
       114:
         frequency: [557, 0]
         amplitude: [0, 50, 0.04, 2000, 0.166, 2000, 0.5, 1500]
-      49:
+      125:
         frequency: [557, 0]
         amplitude: [0.5, 50, 0.5, 3000, 0, 12500]
   -
